@@ -1,45 +1,48 @@
-            position: relative;
-            z-index: 10;
-        }
-        .badges-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            padding: 3rem 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .badge-item {
-            font-family: 'Archivo Black', sans-serif;
-            color: var(--accent-color);
-            font-size: 1.5rem;
-            letter-spacing: -1px;
-            text-transform: uppercase;
-        }
-        @media (max-width: 768px) {
-            .hero { grid-template-columns: 1fr; }
-            .badges-section { grid-template-columns: 1fr; gap: 1rem; }
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestructura Digital | Control & Captura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>INFRAESTRUCTURA DIGITAL PARA INDUSTRIA Y LOGÍSTICA.</h1>
-                <p class="subtitle">Instalamos sistemas de captura y control comercial para empresas que ya venden, pero no miden.</p>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CONTROL <span>CAPTURA</span></div>
+            <div class="status-badge"><span class="dot"></span> SISTEMA ACTIVO</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>INFRAESTRUCTURA DIGITAL DE ALTA FIDELIDAD</h1>
+            <p>Implementación de sistemas de captura y control comercial con arquitectura industrial robusta.</p>
+            <div class="cta-group">
+                <a href="#contacto" class="btn-primary">SOLICITAR REVISIÓN TÉCNICA</a>
+                <a href="https://wa.me/525512345678" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> CONTACTO DIRECTO</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="badges-section">
-            <div class="badge-item">LOGÍSTICA</div>
-            <div class="badge-item">CONSTRUCCIÓN</div>
-            <div class="badge-item">ANÁLISIS DE DATOS</div>
-        </section>
+    <section id="contacto" class="form-container">
+        <div class="glass-card">
+            <h2>REGISTRO DE TERMINAL</h2>
+            <form id="lead-form">
+                <input type="text" id="nombre" placeholder="NOMBRE DEL OPERADOR / EMPRESA" required>
+                <input type="email" id="email" placeholder="CORREO ELECTRÓNICO INSTITUCIONAL" required>
+                <textarea id="mensaje" placeholder="DESCRIPCIÓN DEL REQUERIMIENTO TÉCNICO"></textarea>
+                <button type="submit" class="btn-submit">INICIAR DESPLIEGUE</button>
+            </form>
+            <div id="form-response"></div>
+        </div>
+    </section>
 
-        <section class="seccion-oscura">
-            <div class="container">
-                <span class="etiqueta">AUTORIDAD TÉCNICA</span>
+    <footer>
+        <p>© 2026 clientedigital.me | CDMX - México | <span class="tech-text">v1.0.1-stable</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

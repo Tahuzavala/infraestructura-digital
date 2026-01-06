@@ -1,131 +1,115 @@
 :root {
-    --primary: #FFD700; /* Amarillo industrial */
-    --bg: #050505;      
-    --surface: #0a0a0b;
-    /* REJILLA CORREGIDA: Subimos opacidad a 0.1 para que sea visible */
-    --grid-color: rgba(255, 215, 0, 0.1); 
-    --text: #ffffff;
-    --text-dim: #a0a0a0;
-    --border: #1a1a1a;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    --primary-orange: #ff6600;
+    --dark-bg: #0a0a0a;
+    --panel-bg: #1a1a1a;
+    --text-light: #e0e0e0;
 }
 
 body {
-    background-color: var(--bg);
-    /* FONDO CON REJILLA AMARILLA MARCADA */
-    background-image: 
-        radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.08), transparent 80%),
-        linear-gradient(var(--grid-color) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-    background-size: 100% 100%, 50px 50px, 50px 50px;
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.4;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
     overflow-x: hidden;
 }
 
-.vignette {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, transparent 10%, rgba(0,0,0,0.85) 100%);
-    pointer-events: none;
-    z-index: 1;
+nav {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
 }
 
-.header {
-    padding: 1.5rem 2rem;
-    font-weight: 900;
-    border-bottom: 1px solid var(--border);
-    position: relative;
-    z-index: 100;
-    background: rgba(5, 5, 5, 0.9);
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span { color: var(--primary-orange); }
+
+.status-badge {
+    font-size: 0.8rem;
+    background: #222;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #444;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    box-shadow: 0 0 10px #00ff00;
 }
 
 .hero {
-    padding: 10rem 1rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    z-index: 2;
+    background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), 
+                url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80');
+    background-size: cover;
 }
 
-h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    line-height: 0.9;
-    font-weight: 900;
-    letter-spacing: -3px;
-    margin-bottom: 2rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    color: var(--text-dim);
-    max-width: 600px;
-    margin: 0 auto 3rem;
-}
+h1 { font-size: 3.5rem; margin-bottom: 20px; }
 
 .btn-primary {
-    background-color: var(--primary);
-    color: #000;
-    padding: 1.2rem 2.5rem;
+    background: var(--primary-orange);
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
-    font-weight: 900;
-    display: inline-block;
-    border: 2px solid var(--primary);
+    font-weight: bold;
+    border-radius: 4px;
     transition: 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: transparent;
-    color: var(--primary);
+.btn-whatsapp {
+    background: #25d366;
+    color: white;
+    padding: 15px 30px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
-.seccion-oscura {
-    padding: 8rem 2rem;
-    background-color: var(--surface);
-    border-top: 1px solid var(--border);
-    position: relative;
-    z-index: 2;
+.glass-card {
+    background: var(--panel-bg);
+    padding: 40px;
+    max-width: 500px;
+    margin: -100px auto 50px;
+    border: 1px solid #333;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    box-sizing: border-box;
 }
 
-.etiqueta {
-    color: var(--primary);
-    font-weight: 900;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 1.5rem;
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid var(--primary-orange);
+    color: var(--primary-orange);
+    cursor: pointer;
+    font-weight: bold;
 }
 
-h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    letter-spacing: -2px;
-}
-
-.texto-enfasis {
-    font-size: 1.5rem;
-    color: var(--text);
-}
-
-.footer {
-    padding: 4rem;
-    text-align: center;
-    color: #333;
-    font-size: 0.8rem;
+.btn-submit:hover {
+    background: var(--primary-orange);
+    color: white;
 }
