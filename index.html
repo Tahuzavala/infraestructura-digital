@@ -3,45 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infraestructura Digital | Control & Captura</title>
+    <title>BUILTA | Infraestructura Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">CONTROL <span>CAPTURA</span></div>
-            <div class="status-badge"><span class="dot"></span> SISTEMA ACTIVO</div>
+    <header class="main-header">
+        <div class="logo">BUILTA<span>.</span></div>
+        <nav class="desktop-nav">
+            <a href="#contacto" class="btn-quote">SOLICITAR COTIZACIÓN →</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero-section">
         <div class="hero-content">
-            <h1>INFRAESTRUCTURA DIGITAL DE ALTA FIDELIDAD</h1>
-            <p>Implementación de sistemas de captura y control comercial con arquitectura industrial robusta.</p>
-            <div class="cta-group">
-                <a href="#contacto" class="btn-primary">SOLICITAR REVISIÓN TÉCNICA</a>
-                <a href="https://wa.me/525512345678" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> CONTACTO DIRECTO</a>
+            <h3 class="tagline">CALIDAD INDUSTRIAL GARANTIZADA</h3>
+            <h1>INFRAESTRUCTURA PARA PROYECTOS DE ALTA ESCALA</h1>
+            <p>Implementamos soluciones de control y captura técnica con estándares de ingeniería moderna.</p>
+            <div class="hero-btns">
+                <button class="btn-main">EXPLORAR MÉTODOS</button>
+                <a href="https://wa.me/tu-numero" class="btn-sub"><i class="fab fa-whatsapp"></i> CONTACTO</a>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="form-container">
-        <div class="glass-card">
-            <h2>REGISTRO DE TERMINAL</h2>
-            <form id="lead-form">
-                <input type="text" id="nombre" placeholder="NOMBRE DEL OPERADOR / EMPRESA" required>
-                <input type="email" id="email" placeholder="CORREO ELECTRÓNICO INSTITUCIONAL" required>
-                <textarea id="mensaje" placeholder="DESCRIPCIÓN DEL REQUERIMIENTO TÉCNICO"></textarea>
-                <button type="submit" class="btn-submit">INICIAR DESPLIEGUE</button>
-            </form>
-            <div id="form-response"></div>
+    <section class="info-grid">
+        <div class="info-card">
+            <i class="fas fa-users-cog"></i>
+            <h4>Equipo Experto</h4>
+            <p>Personal técnico capacitado en despliegue de activos digitales.</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-microchip"></i>
+            <h4>Equipo Moderno</h4>
+            <p>Hardware de última generación para captura de datos en campo.</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-project-diagram"></i>
+            <h4>Métodos Inteligentes</h4>
+            <p>Arquitectura basada en eficiencia y trazabilidad técnica.</p>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 clientedigital.me | CDMX - México | <span class="tech-text">v1.0.1-stable</span></p>
-    </footer>
+    <section id="contacto" class="contact-section">
+        <div class="contact-card">
+            <h2>INICIAR DESPLIEGUE</h2>
+            <form id="lead-form">
+                <input type="text" id="nombre" placeholder="Nombre completo o Empresa" required>
+                <input type="email" id="email" placeholder="Correo electrónico institucional" required>
+                <textarea id="mensaje" placeholder="Detalles técnicos del requerimiento"></textarea>
+                <button type="submit">ENVIAR REQUERIMIENTO</button>
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
