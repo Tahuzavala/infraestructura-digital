@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -17,150 +18,93 @@
       <a class="brand" href="/">
         <img src="clientedigital-assets/logo-principal.svg" alt="Cliente Digital" style="height: 45px; width: auto; display: block;">
       </a>
-
-      <nav class="nav" aria-label="Navegación principal">
+      <nav class="nav">
         <a href="#metodologia">Cómo trabajamos</a>
         <a href="#soluciones">Qué hacemos</a>
         <a href="#contacto">Contacto</a>
       </nav>
-
       <div class="topbar__right">
         <a href="https://wa.me/tu-numero" class="whatsapp-badge">
-          <div class="whatsapp-badge__icon">
-            <i class="fab fa-whatsapp"></i>
-          </div>
+          <div class="whatsapp-badge__icon"><i class="fab fa-whatsapp"></i></div>
           <div class="whatsapp-badge__text">
             <small>Consultoría Gratuita</small>
             <strong>Agenda una llamada</strong>
           </div>
         </a>
-
         <a class="btn btn--primary" href="#contacto">Conseguir Clientes</a>
       </div>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero__media" aria-hidden="true"></div>
-    <div class="hero__shade" aria-hidden="true"></div>
-
+    <div class="hero__media"></div>
+    <div class="hero__shade"></div>
     <div class="wrap hero__inner">
       <div class="hero__copy">
         <p class="eyebrow">ESPECIALISTAS EN SECTOR INDUSTRIAL Y CONSTRUCCIÓN</p>
-
-        <h1 class="hero__h1">
-          Hacemos que tu empresa<br>
-          tenga clientes nuevos cada día
-        </h1>
-
-        <p class="hero__lead">
-          Creamos sistemas para que negocios de maquinaria y obra civil reciban solicitudes de presupuesto reales.<br>
-          Tú te encargas de la obra, nosotros de que no deje de sonar tu teléfono.
-        </p>
-
+        <h1 class="hero__h1">Hacemos que tu empresa tenga clientes nuevos cada día</h1>
+        <p class="hero__lead">Creamos sistemas para que negocios de maquinaria y obra civil reciban solicitudes de presupuesto reales. Tú te encargas de la obra, nosotros de que no deje de sonar tu teléfono.</p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="#contacto">Conseguir Clientes</a>
           <a class="btn btn--ghost" href="#metodologia">Ver Cómo Funciona</a>
         </div>
-
-        <div class="badges">
-          <div class="badge"><strong>+120</strong><span>negocios creciendo</span></div>
-          <div class="badge"><strong>24/7</strong><span>soporte técnico</span></div>
-          <div class="badge"><strong>OK</strong><span>sistemas garantizados</span></div>
-        </div>
       </div>
     </div>
-
-    <div class="hero__cut" aria-hidden="true"></div>
+    <div class="hero__cut"></div>
   </section>
 
   <section class="section" id="metodologia">
     <div class="wrap split">
       <div class="split__left">
-        <p class="kicker">Resultados, no palabras</p>
+        <p class="kicker">RESULTADOS, NO PALABRAS</p>
         <h2>Sabemos qué necesita tu cliente industrial</h2>
-        <p class="p">
-          No te vendemos una página web. Te entregamos una herramienta que encuentra a las personas que buscan tus servicios en Vallejo y zonas industriales, y las pone en contacto directo contigo.
-        </p>
+        <p class="p">No te vendemos una página web. Te entregamos una herramienta que encuentra a las personas que buscan tus servicios en Vallejo y zonas industriales, y las pone en contacto directo contigo.</p>
         <ul class="list">
           <li>Recibe llamadas de personas interesadas en contratarte</li>
           <li>Control total de cuánto inviertes y cuánto ganas</li>
           <li>Sin términos técnicos: resultados que puedes ver en tu cuenta</li>
         </ul>
-        <div class="row">
-          <a class="link" href="https://wa.me/tu-numero">Pregunta por WhatsApp sin compromiso →</a>
+        <a class="link" href="https://wa.me/tu-numero">Pregunta por WhatsApp sin compromiso →</a>
+      </div>
+      
+      <div class="split__right">
+        <div class="results-carousel">
+          <div class="carousel-item">
+            <div class="result-card">
+              <span class="result-tag">TU FUTURO TABLERO</span>
+              <h4>Control de Inversión</h4>
+              <p>Sabrás exactamente cuánto te cuesta cada cliente nuevo que entra por WhatsApp.</p>
+              <img src="https://images.unsplash.com/photo-1551288049-bbdac8626ad1?auto=format&fit=crop&w=800&q=80" alt="Medición">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="result-card">
+              <span class="result-tag">FILTRO INTELIGENTE</span>
+              <h4>Cero Curiosos</h4>
+              <p>Nuestro sistema califica a la persona antes de que llegue a tu teléfono.</p>
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Filtrado">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="split__right">
-        <figure class="angled">
-          <img src="https://images.unsplash.com/photo-1551288049-bbdac8626ad1?auto=format&fit=crop&w=1400&q=80" alt="Crecimiento de negocio" loading="lazy">
-        </figure>
-      </div>
     </div>
   </section>
 
-  <section class="section section--soft" id="soluciones">
-    <div class="wrap">
-      <header class="head">
-        <h2>Qué hacemos por tu empresa</h2>
-        <p class="p-muted">Nos enfocamos en solucionar el problema más grande de cualquier negocio: la falta de ventas.</p>
-      </header>
-      <div class="grid3">
-        <article class="card">
-          <div class="card__top"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt=""></div>
-          <div class="card__body">
-            <h3>Buscamos a tus clientes</h3>
-            <p>Hacemos que las empresas que necesitan rentar maquinaria vean tu negocio primero.</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card__top"><img src="https://images.unsplash.com/photo-1504868584819-f8e90526ef7d?auto=format&fit=crop&w=1200&q=80" alt=""></div>
-          <div class="card__body">
-            <h3>Medimos todo por ti</h3>
-            <p>Sabrás exactamente de dónde vienen tus clientes y cuánto te cuesta conseguir cada uno.</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card__top"><img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1200&q=80" alt=""></div>
-          <div class="card__body">
-            <h3>Vende en automático</h3>
-            <p>Tus solicitudes de presupuesto llegarán directo a tu WhatsApp o correo.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" id="contacto">
-    <div class="wrap cta__inner">
-      <div class="cta__copy">
-        <h2>¿Quieres más clientes reales?</h2>
-        <p>Déjanos tus datos y te explicaremos cómo hacer que tu empresa industrial crezca este mes con solicitudes constantes de presupuesto.</p>
-      </div>
-      <form class="form" id="lead-form">
-        <label class="field"><span>Nombre o Empresa</span><input type="text" name="nombre" placeholder="Nombre" required></label>
-        <label class="field"><span>WhatsApp de contacto</span><input type="tel" name="telefono" placeholder="Ej: 55 1234 5678" required></label>
-        <button class="btn btn--primary btn--full" type="submit">Quiero Información</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="wrap footer__grid">
-      <div>
-        <h4>CLIENTE DIGITAL</h4>
-        <p>Expertos en hacer crecer empresas industriales mediante sistemas de solicitudes automáticas.</p>
-      </div>
-      <div>
-        <h4>Zonas de Operación</h4>
-        <p>Vallejo (CDMX)<br>Edomex Industrial<br>Todo México</p>
-      </div>
-    </div>
-    <div class="wrap footer__bottom">
-      <small>© 2026 Cliente Digital. Todos los derechos reservados.</small>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.results-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false
+      });
+    });
+  </script>
 </body>
 </html>
