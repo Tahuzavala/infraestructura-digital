@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Más Clientes para tu Empresa Industrial | Cliente Digital</title>
+  <title>Resultados para tu Empresa Industrial | Cliente Digital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -20,7 +19,7 @@
       </a>
       <nav class="nav">
         <a href="#metodologia">Cómo trabajamos</a>
-        <a href="#soluciones">Qué hacemos</a>
+        <a href="#beneficios">Beneficios</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <div class="topbar__right">
@@ -41,12 +40,12 @@
     <div class="hero__shade"></div>
     <div class="wrap hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow">ESPECIALISTAS EN SECTOR INDUSTRIAL Y CONSTRUCCIÓN</p>
+        <p class="eyebrow">INFRAESTRUCTURA DE VENTAS INDUSTRIALES</p>
         <h1 class="hero__h1">Hacemos que tu empresa tenga clientes nuevos cada día</h1>
-        <p class="hero__lead">Creamos sistemas para que negocios de maquinaria y obra civil reciban solicitudes de presupuesto reales. Tú te encargas de la obra, nosotros de que no deje de sonar tu teléfono.</p>
+        <p class="hero__lead">Tú te encargas de la obra, nosotros de que no deje de sonar tu teléfono. Sin complicaciones técnicas, solo resultados que puedes medir.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#contacto">Conseguir Clientes</a>
-          <a class="btn btn--ghost" href="#metodologia">Ver Cómo Funciona</a>
+          <a class="btn btn--primary" href="#contacto">Iniciar Diagnóstico</a>
+          <a class="btn btn--ghost" href="#metodologia">Ver Metodología</a>
         </div>
       </div>
     </div>
@@ -54,57 +53,59 @@
   </section>
 
   <section class="section" id="metodologia">
-    <div class="wrap split">
-      <div class="split__left">
-        <p class="kicker">RESULTADOS, NO PALABRAS</p>
-        <h2>Sabemos qué necesita tu cliente industrial</h2>
-        <p class="p">No te vendemos una página web. Te entregamos una herramienta que encuentra a las personas que buscan tus servicios en Vallejo y zonas industriales, y las pone en contacto directo contigo.</p>
-        <ul class="list">
-          <li>Recibe llamadas de personas interesadas en contratarte</li>
-          <li>Control total de cuánto inviertes y cuánto ganas</li>
-          <li>Sin términos técnicos: resultados que puedes ver en tu cuenta</li>
-        </ul>
-        <a class="link" href="https://wa.me/tu-numero">Pregunta por WhatsApp sin compromiso →</a>
+    <div class="wrap">
+      <div class="head-center">
+        <p class="kicker">MÉTODO CLIENTE DIGITAL</p>
+        <h2>Control total de tu crecimiento</h2>
+        <p class="p-muted">Eliminamos la incertidumbre de tu proceso comercial con un sistema diseñado para el sector de la construcción y maquinaria pesada.</p>
       </div>
-      
-      <div class="split__right">
-        <div class="results-carousel">
-          <div class="carousel-item">
-            <div class="result-card">
-              <span class="result-tag">TU FUTURO TABLERO</span>
-              <h4>Control de Inversión</h4>
-              <p>Sabrás exactamente cuánto te cuesta cada cliente nuevo que entra por WhatsApp.</p>
-              <img src="https://images.unsplash.com/photo-1551288049-bbdac8626ad1?auto=format&fit=crop&w=800&q=80" alt="Medición">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="result-card">
-              <span class="result-tag">FILTRO INTELIGENTE</span>
-              <h4>Cero Curiosos</h4>
-              <p>Nuestro sistema califica a la persona antes de que llegue a tu teléfono.</p>
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Filtrado">
-            </div>
-          </div>
+
+      <div class="grid-clean">
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Clientes Filtrados</h3>
+          <p>Encontramos empresas en zonas industriales como Vallejo que necesitan tus servicios ahora mismo. Cero curiosos, solo solicitudes de presupuesto reales.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-robot"></i></div>
+          <h3>Venta en Automático</h3>
+          <p>Tu teléfono recibirá notificaciones de clientes calificados. Nuestro sistema trabaja 24/7 para que tú solo te enfoques en cerrar el trato.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Tablero de Resultados</h3>
+          <p>Sabrás exactamente cuánto inviertes y cuánto ganas por cada cliente nuevo. Transparencia total sobre tu retorno de inversión.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.results-carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows: false
-      });
-    });
-  </script>
+  <section class="cta" id="contacto">
+    <div class="wrap cta__inner">
+      <div class="cta__copy">
+        <h2>¿Listo para recibir más solicitudes?</h2>
+        <p>Déjanos tus datos y un consultor analizará tu zona industrial para decirte cuántos clientes podemos traerte este mes.</p>
+        <div class="badges-cta">
+          <span class="badge-cta">✓ Respuesta en 24h</span>
+          <span class="badge-cta">✓ Diagnóstico Gratuito</span>
+        </div>
+      </div>
+      <form class="form" id="lead-form">
+        <label class="field"><span>Nombre o Empresa</span><input type="text" name="nombre" placeholder="Nombre" required></label>
+        <label class="field"><span>WhatsApp de contacto</span><input type="tel" name="telefono" placeholder="55 1234 5678" required></label>
+        <button class="btn btn--primary btn--full" type="submit">Quiero Información</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__bottom">
+      <p>© 2026 Cliente Digital. Especialistas en Infraestructura Comercial High Ticket.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
