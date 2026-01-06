@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resultados para tu Empresa Industrial | Cliente Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <div class="topbar__left">
+        <a class="brand" href="/">
+          <img src="clientedigital-assets/logo-principal.svg" alt="Cliente Digital" style="height: 40px; width: auto; display: block;">
+        </a>
+        <nav class="nav">
+          <a href="#metodologia">Cómo trabajamos</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="topbar__right">
+        <a href="https://wa.me/tu-numero" class="whatsapp-badge">
+          <div class="whatsapp-badge__icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="whatsapp-badge__text">
+            <small>Consultoría Gratuita</small>
+            <strong>Agenda una llamada</strong>
+          </div>
+        </a>
+        <a class="btn btn--primary" href="#contacto">Conseguir Clientes</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__media"></div>
+    <div class="hero__shade"></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">INFRAESTRUCTURA DE VENTAS INDUSTRIALES</p>
+        <h1 class="hero__h1">Hacemos que tu empresa tenga clientes nuevos cada día</h1>
+        <p class="hero__lead">Tú te encargas de la obra, nosotros de que no deje de sonar tu teléfono. Sin complicaciones técnicas, solo resultados que puedes medir.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto">Iniciar Diagnóstico</a>
+          <a class="btn btn--ghost" href="#metodologia">Ver Metodología</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__cut"></div>
+  </section>
+
+  <section class="section" id="metodologia">
+    <div class="wrap">
+      <div class="head-center">
+        <p class="kicker">MÉTODO CLIENTE DIGITAL</p>
+        <h2>Control total de tu crecimiento</h2>
+      </div>
+
+      <div class="grid-clean">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-card__icon"><i class="fas fa-bullseye"></i></div>
+              <h3>Clientes Filtrados</h3>
+              <p>Encontramos empresas en Vallejo que necesitan tus servicios ahora mismo. Cero curiosos.</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="clientedigital-assets/metodo-mapa.jpg" alt="Mapa de demanda">
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-card__icon"><i class="fas fa-robot"></i></div>
+              <h3>Venta en Automático</h3>
+              <p>Tu teléfono recibirá notificaciones de clientes calificados las 24 horas del día.</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="clientedigital-assets/metodo-whatsapp.jpg" alt="Notificación WhatsApp">
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="feature-card__icon"><i class="fas fa-chart-pie"></i></div>
+              <h3>Tablero de Resultados</h3>
+              <p>Sabrás exactamente cuánto inviertes y cuánto ganas por cada cliente nuevo.</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="clientedigital-assets/metodo-grafica.jpg" alt="Gráfica ROI">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contacto">
+    <div class="wrap cta__inner">
+      <div class="cta__copy">
+        <h2>¿Listo para recibir más solicitudes?</h2>
+        <p>Déjanos tus datos y un consultor analizará tu zona industrial para decirte cuántos clientes podemos traerte este mes.</p>
+      </div>
+      <form class="form" id="lead-form">
+        <label class="field"><span>Nombre o Empresa</span><input type="text" name="nombre" placeholder="Nombre" required></label>
+        <label class="field"><span>WhatsApp de contacto</span><input type="tel" name="telefono" placeholder="55 1234 5678" required></label>
+        <button class="btn btn--primary btn--full" type="submit">Quiero Información</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__bottom">
+      <p>© 2026 Cliente Digital. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
