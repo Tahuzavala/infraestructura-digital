@@ -1,0 +1,45 @@
+            position: relative;
+            z-index: 10;
+        }
+        .badges-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 3rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .badge-item {
+            font-family: 'Archivo Black', sans-serif;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .hero { grid-template-columns: 1fr; }
+            .badges-section { grid-template-columns: 1fr; gap: 1rem; }
+        }
+    </style>
+</head>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>INFRAESTRUCTURA DIGITAL PARA INDUSTRIA Y LOGÍSTICA.</h1>
+                <p class="subtitle">Instalamos sistemas de captura y control comercial para empresas que ya venden, pero no miden.</p>
+            </div>
+        </section>
+
+        <section class="badges-section">
+            <div class="badge-item">LOGÍSTICA</div>
+            <div class="badge-item">CONSTRUCCIÓN</div>
+            <div class="badge-item">ANÁLISIS DE DATOS</div>
+        </section>
+
+        <section class="seccion-oscura">
+            <div class="container">
+                <span class="etiqueta">AUTORIDAD TÉCNICA</span>
