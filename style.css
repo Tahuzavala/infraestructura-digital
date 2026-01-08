@@ -1,36 +1,71 @@
-/* ... (Mantener variables anteriores) ... */
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --line: #e5e7eb;
+  --accent: #f28c1b;
+  --dark: #0f172a;
+  --shadow: 0 10px 40px rgba(0,0,0,0.06);
+}
 
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+.wrap { width: min(1140px, 92vw); margin: 0 auto; }
+a { text-decoration: none; color: inherit; }
+
+/* HEADER */
+.topbar { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--line); }
+.topbar__inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+.topbar__left { display: flex; align-items: center; gap: 40px; }
+.nav { display: flex; gap: 20px; font-weight: 600; font-size: 14px; color: var(--muted); }
+.topbar__right { display: flex; align-items: center; gap: 15px; }
+
+.whatsapp-badge { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 6px 14px; border-radius: 12px; }
+.whatsapp-badge__icon { color: #25d366; font-size: 18px; }
+.whatsapp-badge__text small { display: block; font-size: 10px; line-height: 1; }
+.whatsapp-badge__text strong { font-size: 12px; font-weight: 800; }
+
+/* HERO */
+.hero { position: relative; min-height: 70vh; display: flex; align-items: center; color: #fff; background: var(--dark); }
+.hero__media { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.4; }
+.hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, #0f172a 0%, transparent 100%); }
+.hero__inner { position: relative; z-index: 2; max-width: 700px; }
+.hero__h1 { font-size: clamp(32px, 5vw, 54px); font-weight: 800; margin: 15px 0; line-height: 1.1; }
+.hero__lead { font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 30px; }
+.hero__actions { display: flex; gap: 15px; }
+.hero__cut { position: absolute; bottom: 0; width: 100%; height: 60px; background: #fff; clip-path: polygon(0 100%, 100% 0, 100% 100%); }
+
+/* SECTIONS */
+.section { padding: 100px 0; }
 .bg-light { background: #f8fafc; }
+.head-center { text-align: center; margin-bottom: 60px; }
+.kicker { color: var(--accent); font-weight: 800; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
 
-.benefit-item {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  padding: 20px;
+.grid-clean { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+/* FLIP CARDS */
+.flip-card { height: 350px; perspective: 1000px; }
+.flip-card-inner { position: relative; width: 100%; height: 100%; transition: 0.6s; transform-style: preserve-3d; cursor: pointer; }
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+.flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 20px; border: 1px solid var(--line); padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.flip-card-back { transform: rotateY(180deg); padding: 0; overflow: hidden; background: #f1f5f9; }
+.flip-card-back img { width: 100%; height: 100%; object-fit: cover; }
+
+/* BENEFICIOS */
+.benefit-item { display: flex; gap: 20px; }
+.benefit-item i { color: var(--accent); font-size: 24px; }
+.benefit-item h4 { margin: 0 0 10px; font-weight: 800; }
+.benefit-item p { margin: 0; color: var(--muted); font-size: 14px; }
+
+/* BUTTONS */
+.btn { padding: 14px 28px; border-radius: 12px; font-weight: 800; border: none; cursor: pointer; transition: 0.2s; display: inline-block; }
+.btn--primary { background: var(--accent); color: #fff; }
+.btn--ghost { border: 1px solid #fff; color: #fff; }
+.btn--full { width: 100%; text-align: center; }
+
+.footer { padding: 40px 0; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 900px) {
+    .nav, .hero__cut { display: none; }
+    .topbar__inner { flex-direction: column; gap: 15px; }
 }
-
-.benefit-item i {
-  color: var(--accent);
-  font-size: 24px;
-  margin-top: 5px;
-}
-
-.benefit-item h4 {
-  font-size: 18px;
-  font-weight: 800;
-  margin: 0 0 10px;
-}
-
-.benefit-item p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Ajuste para que el botón naranja resalte más */
-.btn--primary {
-  background: #f28c1b;
-  box-shadow: 0 4px 14px rgba(242, 140, 27, 0.4);
-}
-
-/* ... (Mantener el resto del CSS anterior) ... */

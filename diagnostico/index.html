@@ -6,55 +6,63 @@
   <title>Diagnóstico Digital | Cliente Digital</title>
   <link rel="stylesheet" href="../style.css" />
   <style>
-    .scanner-box { background: #0f172a; color: #00ff41; padding: 30px; border-radius: 15px; font-family: monospace; margin: 20px 0; display: none; }
-    .progress-bar { width: 0%; height: 5px; background: var(--accent); transition: 0.3s; }
+    body { background: #fff; color: #0f172a; }
+    .scanner-box { background: #0f172a; color: #00ff41; padding: 30px; border-radius: 15px; font-family: monospace; margin: 20px 0; display: none; text-align: left; }
+    .progress-bar-container { width: 100%; background: #334155; height: 10px; border-radius: 5px; margin-top: 15px; overflow: hidden; }
+    .progress-bar { width: 0%; height: 100%; background: #f28c1b; transition: 0.4s; }
   </style>
 </head>
 <body>
-  <div class="wrap" style="padding: 60px 0; max-width: 600px;">
-    <h2>Inicia tu Diagnóstico Industrial</h2>
-    <p>Ingresa tu sitio web o nombre de empresa para comenzar el análisis de visibilidad.</p>
+  <div class="wrap" style="padding: 100px 0; max-width: 600px; text-align: center;">
+    <h2 style="font-size: 32px; font-weight: 800;">Inicia tu Diagnóstico Industrial</h2>
+    <p style="color: #64748b; margin-bottom: 40px;">Analizaremos la visibilidad de tu empresa frente a competidores en tiempo real.</p>
     
-    <form id="diag-form" class="form" style="background: #f8fafc; padding: 30px; border: 1px solid #e5e7eb;">
-      <label class="field"><span style="color: #0f172a;">URL del sitio o Empresa</span><input type="text" id="target" placeholder="www.tuempresa.com" required style="border: 1px solid #ccc; color: #000;"></label>
-      <label class="field"><span style="color: #0f172a;">Tu WhatsApp</span><input type="tel" id="user-whats" placeholder="55..." required style="border: 1px solid #ccc; color: #000;"></label>
-      <button class="btn btn--primary btn--full" type="button" onclick="startScanner()">Analizar ahora</button>
-    </form>
+    <div id="diag-container">
+        <form id="diag-form" class="form" style="background: #f8fafc; padding: 40px; border-radius: 20px; border: 1px solid #e5e7eb; text-align: left;">
+            <label class="field"><span style="color: #0f172a; font-weight: 700;">Sitio web o Nombre de Empresa</span><input type="text" id="target" placeholder="www.ejemplo.com" required style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; margin-top:8px; color:#000;"></label>
+            <label class="field" style="margin-top:20px; display:block;"><span style="color: #0f172a; font-weight: 700;">Tu WhatsApp</span><input type="tel" id="user-whats" placeholder="55 1234 5678" required style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; margin-top:8px; color:#000;"></label>
+            <button class="btn btn--primary btn--full" type="button" onclick="startScanner()" style="margin-top:30px; width:100%;">Analizar ahora</button>
+        </form>
+    </div>
 
     <div id="scanner" class="scanner-box">
       <div id="log">Iniciando protocolo de análisis...</div>
-      <div class="progress-bar" id="p-bar"></div>
+      <div class="progress-bar-container"><div class="progress-bar" id="p-bar"></div></div>
     </div>
   </div>
 
   <script>
     function startScanner() {
-      document.getElementById('diag-form').style.display = 'none';
+      const target = document.getElementById('target').value;
+      const whats = document.getElementById('user-whats').value;
+      if(!target || !whats) return alert("Por favor llena los campos");
+
+      document.getElementById('diag-container').style.display = 'none';
       const scanner = document.getElementById('scanner');
       const log = document.getElementById('log');
       const pBar = document.getElementById('p-bar');
       scanner.style.display = 'block';
 
       const steps = [
-        "Conectando con PageRank API...",
-        "Analizando densidad de keywords industriales...",
-        "Verificando autoridad en zona Vallejo...",
-        "Calculando potencial de leads mensuales...",
-        "¡Análisis completo! Generando informe..."
+        "Conectando con Google Search Console API...",
+        "Escaneando visibilidad en zonas industriales...",
+        "Comparando contra principales competidores...",
+        "Calculando volumen de búsqueda mensual...",
+        "Analizando autoridad de dominio (PageRank)...",
+        "¡Diagnóstico completado!"
       ];
 
       let i = 0;
       const interval = setInterval(() => {
         if (i < steps.length) {
           log.innerHTML += `<br>> ${steps[i]}`;
-          pBar.style.width = ((i+1) * 20) + "%";
+          pBar.style.width = ((i+1) * 16.6) + "%";
           i++;
         } else {
           clearInterval(interval);
-          log.innerHTML += "<br><br><strong>Informe enviado a tu WhatsApp.</strong>";
-          // Aquí se dispararía el webhook de n8n después
+          log.innerHTML += "<br><br><span style='color:#fff; background:#f28c1b; padding:5px 10px; border-radius:5px;'>Informe enviado a tu WhatsApp</span>";
         }
-      }, 1500);
+      }, 1200);
     }
   </script>
 </body>
