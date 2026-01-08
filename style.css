@@ -20,7 +20,7 @@ a { text-decoration: none; color: inherit; }
 
 /* WHATSAPP BADGE VERDE */
 .whatsapp-badge { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 6px 14px; border-radius: 12px; }
-.whatsapp-badge__icon { color: #25d366; font-size: 18px; } /* VERDE WHATSAPP */
+.whatsapp-badge__icon { color: #25d366; font-size: 18px; }
 .whatsapp-badge__text small { display: block; font-size: 10px; color: var(--muted); }
 .whatsapp-badge__text strong { font-size: 12px; font-weight: 800; }
 
@@ -35,4 +35,29 @@ a { text-decoration: none; color: inherit; }
 .hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.4) 100%); }
 .hero__inner { position: relative; z-index: 2; max-width: 680px; }
 .hero__h1 { font-size: 52px; font-weight: 800; line-height: 1.1; margin: 15px 0; }
-.hero__cut { position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; background: #fff; clip-path: polygon(0 100%, 100% 0, 100% 100%); } /* LA DIAGONAL */
+.hero__cut { position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; background: #fff; clip-path: polygon(0 100%, 100% 0, 100% 100%); }
+
+/* SECCIONES Y GRIDS */
+.section { padding: 100px 0; }
+.bg-light { background: #f8fafc; }
+.head-center { text-align: center; margin-bottom: 60px; }
+.kicker { color: var(--accent); font-weight: 800; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+.grid-clean { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+/* FLIP CARDS */
+.flip-card { height: 350px; perspective: 1000px; }
+.flip-card-inner { position: relative; width: 100%; height: 100%; transition: 0.6s; transform-style: preserve-3d; cursor: pointer; }
+.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+.flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 20px; border: 1px solid var(--line); padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.flip-card-front { background: #fff; }
+.flip-card-back { background: #f1f5f9; transform: rotateY(180deg); padding: 0; overflow: hidden; }
+.flip-card-back img { width: 100%; height: 100%; object-fit: cover; }
+.feature-card__icon { font-size: 28px; color: var(--accent); margin-bottom: 20px; }
+
+/* BENEFICIOS */
+.benefit-item { display: flex; gap: 20px; text-align: left; }
+.benefit-item i { color: var(--accent); font-size: 24px; }
+.benefit-item h4 { margin: 0 0 10px; font-weight: 800; }
+.benefit-item p { margin: 0; color: var(--muted); font-size: 14px; }
+
+.footer { padding: 40px 0; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 13px; }
