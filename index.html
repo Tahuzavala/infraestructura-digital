@@ -1,138 +1,620 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cliente Digital | Infraestructura Industrial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Zavala | Brand Management, Growth & Creative Direction</title>
+
+  <!-- SEO Meta Tags (Optimized for Sub-page/Landing context) -->
+  <meta name="description" content="Estratega de Brand Management, Growth Digital y Marketing Omnicanal. Más de 13 años liderando posicionamiento de marcas, moda y experiencias BTL." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://holatahu.com" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://holatahu.com" />
+  <meta property="og:title" content="Alejandro Zavala | Brand Management, Growth & Creative Direction" />
+  <meta property="og:description" content="Estratega de Brand Management, Growth Digital y Marketing Omnicanal. Más de 13 años liderando posicionamiento de marcas, moda y experiencias BTL." />
+  <meta property="og:image" content="https://holatahu.com/wp-content/uploads/og-portfolio.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://holatahu.com" />
+  <meta name="twitter:title" content="Alejandro Zavala | Brand Management, Growth & Creative Direction" />
+  <meta name="twitter:description" content="Estratega de Brand Management, Growth Digital y Marketing Omnicanal. Más de 13 años liderando posicionamiento de marcas, moda y experiencias BTL." />
+  <meta name="twitter:image" content="https://holatahu.com/wp-content/uploads/og-portfolio.jpg" />
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://holatahu.com/#person",
+          "name": "Alejandro Zavala",
+          "url": "https://holatahu.com",
+          "image": "https://holatahu.com/wp-content/uploads/og-portfolio.jpg",
+          "description": "Estratega de Brand Management, Growth Digital y Marketing Omnicanal. Más de 13 años liderando posicionamiento de marcas, moda y experiencias BTL.",
+          "jobTitle": "Brand Manager, Growth & Creative Director",
+          "sameAs": [
+            "https://www.linkedin.com/in/alejandrozavala",
+            "https://www.instagram.com/alejandrozavala"
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://holatahu.com/#portfolio",
+          "name": "Alejandro Zavala Creative Book & Portfolio",
+          "author": {
+            "@id": "https://holatahu.com/#person"
+          },
+          "url": "https://holatahu.com/book",
+          "description": "Portafolio Creativo y Editorial de Alejandro Zavala que muestra su trabajo en marcas de moda de alta gama, dirección de arte impulsada por datos y experiencias BTL masivas.",
+          "genre": "Creative Direction, Brand Strategy, Growth Marketing"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+  <script>
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXX');
+    gtag('config', 'AW-XXXXXX');
+  </script>
+
+  <!-- Preload first slide image for perfect LCP and zero CLS -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" />
 </head>
-<body>
-  <header class="topbar">
-    <div class="wrap topbar__inner">
-      <div class="topbar__left">
-        <a class="brand" href="index.html">
-          <img src="clientedigital-assets/logo-principal.svg" alt="Logo" style="height: 40px;">
-        </a>
-        <nav class="nav">
-          <a href="#metodologia">Metodología</a>
-          <a href="#beneficios">Beneficios</a>
-        </nav>
-      </div>
-      <div class="topbar__right">
-        <a href="https://wa.me/5518212535?text=Hola,%20quiero%20informes%20de%20tus%20servicios%20de%20atracción%20de%20clientes" class="whatsapp-badge">
-          <div class="whatsapp-badge__icon"><i class="fab fa-whatsapp"></i></div>
-          <div class="whatsapp-badge__text">
-            <small>Consultoría Gratuita</small>
-            <strong>Agenda una llamada</strong>
-          </div>
-        </a>
-        <a class="btn btn--primary" href="diagnostico/index.html">Iniciar el diagnóstico</a>
-      </div>
-    </div>
-  </header>
+<body style="margin: 0; padding: 0;">
 
-  <section class="hero">
-    <div class="hero__media"></div>
-    <div class="hero__shade"></div>
-    <div class="wrap hero__inner">
-      <p class="eyebrow">INFRAESTRUCTURA DE VENTAS INDUSTRIALES</p>
-      <h1 class="hero__h1">Hacemos que tu empresa tenga clientes nuevos cada día</h1>
-      <p class="hero__lead">Tú te encargas de la obra, nosotros de que no deje de sonar tu whats. Sin complicaciones técnicas, solo resultados que puedes medir.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="diagnostico/index.html">Iniciar el diagnóstico</a>
-        <a class="btn btn--ghost" href="#metodologia">Ver Metodología</a>
-      </div>
-    </div>
-    <div class="hero__cut"></div>
-  </section>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  <section class="section" id="metodologia">
-    <div class="wrap">
-      <div class="head-center">
-        <p class="kicker">MÉTODO CLIENTE DIGITAL</p>
-        <h2>Control total de tu crecimiento</h2>
-      </div>
-      <div class="grid-clean">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="feature-card__icon"><i class="fas fa-bullseye"></i></div>
-              <h3>Clientes Filtrados</h3>
-              <p>Encontramos empresas que necesitan tus servicios ahora mismo, cero curiosos.</p>
-            </div>
-            <div class="flip-card-back">
-                <img src="clientedigital-assets/metodo-mapa.jpg" alt="Mapa">
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="feature-card__icon"><i class="fas fa-robot"></i></div>
-              <h3>Venta en Automático</h3>
-              <p>Tu teléfono recibirá notificaciones de clientes calificados constantemente.</p>
-            </div>
-            <div class="flip-card-back">
-                <img src="clientedigital-assets/metodo-whatsapp.jpg" alt="WhatsApp">
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="feature-card__icon"><i class="fas fa-chart-pie"></i></div>
-              <h3>Tablero de Resultados</h3>
-              <p>Sabrás exactamente cuánto inviertes y cuánto ganas por cada cliente nuevo.</p>
-            </div>
-            <div class="flip-card-back">
-                <img src="clientedigital-assets/metodo-grafica.jpg" alt="Gráfica">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- SVG Filters Definition (Embedded safely to simulate the sketch look) -->
+  <svg style="display: none;" aria-hidden="true">
+    <defs>
+      <!-- Displacement filter for organic hand-drawn wavy lines -->
+      <filter id="pb-sketch-filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
 
-  <section class="section bg-light" id="beneficios">
-    <div class="wrap">
-      <div class="head-center">
-        <p class="kicker">POR QUÉ ELEGIRNOS</p>
-        <h2>Beneficios de tu Infraestructura</h2>
-      </div>
-      <div class="grid-clean">
-        <div class="benefit-item">
-          <i class="fas fa-check-circle"></i>
-          <div>
-            <h4>Exclusividad Geográfica</h4>
-            <p>Solo trabajamos con una empresa por sector en tu zona industrial.</p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <i class="fas fa-shield-alt"></i>
-          <div>
-            <h4>Cero Riesgo Técnico</h4>
-            <p>Nosotros gestionamos los servidores y la automatización por ti.</p>
-          </div>
-        </div>
-        <div class="benefit-item">
-          <i class="fas fa-bolt"></i>
-          <div>
-            <h4>Implementación en 7 días</h4>
-            <p>Tu sistema de captación estará activo enviando leads en una semana.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ==========================================
+       START OF WORDPRESS CUSTOM HTML BLOCK (PB-)
+       ========================================== -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Space+Mono:wght@700&display=swap');
 
-  <footer class="footer">
-    <div class="wrap">
-      <p>© 2026 Cliente Digital. Todos los derechos reservados.</p>
+    /* Namespace container isolation */
+    .pb-canvas {
+      --pb-bg: #FCFCFC;
+      --pb-white: #FFFFFF;
+      --pb-dark: #111111;
+      --pb-font-mono: 'Space Mono', monospace;
+      --pb-font-hand: 'Caveat', cursive;
+
+      background-color: var(--pb-bg);
+      min-height: 85vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--pb-font-mono);
+      color: var(--pb-dark);
+      padding: 40px 20px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .pb-canvas *,
+    .pb-canvas *::before,
+    .pb-canvas *::after {
+      box-sizing: border-box;
+    }
+
+    /* Outer Canvas Handwritten Notes (Hidden on mobile < 600px) */
+    .pb-note {
+      position: absolute;
+      font-family: var(--pb-font-hand);
+      font-size: 21px;
+      line-height: 1.25;
+      color: var(--pb-dark);
+      pointer-events: none;
+      user-select: none;
+      z-index: 2;
+    }
+
+    .pb-note-tl {
+      top: 14%;
+      left: 6%;
+      transform: rotate(-3deg);
+    }
+
+    .pb-note-tr {
+      top: 14%;
+      right: 6%;
+      transform: rotate(2deg);
+      text-align: right;
+    }
+
+    .pb-note-bl {
+      bottom: 14%;
+      left: 6%;
+      transform: rotate(-1.5deg);
+    }
+
+    .pb-note-br {
+      bottom: 14%;
+      right: 6%;
+      transform: rotate(3deg);
+      text-align: right;
+    }
+
+    /* Handdrawn underlines styling */
+    .pb-underline {
+      display: inline-block;
+      position: relative;
+    }
+
+    .pb-underline::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--pb-dark);
+      transform: skewX(-15deg);
+      border-radius: 2px;
+    }
+
+    /* Navigation at corners */
+    .pb-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .pb-corner-nav {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .pb-link {
+      position: absolute;
+      pointer-events: auto;
+      font-family: var(--pb-font-mono);
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--pb-dark);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      transition: color 0.2s ease;
+    }
+
+    .pb-link:hover {
+      animation: pbEarthquake 0.15s infinite linear;
+    }
+
+    .pb-link-book {
+      top: 24px;
+      left: 24px;
+    }
+
+    .pb-link-about {
+      top: 24px;
+      right: 24px;
+    }
+
+    .pb-link-services {
+      bottom: 24px;
+      left: 24px;
+    }
+
+    .pb-link-contact {
+      bottom: 24px;
+      right: 24px;
+    }
+
+    /* Sismo hover animation for microinteractions */
+    @keyframes pbEarthquake {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      20% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+      40% { transform: translate(1px, -1px) rotate(0.5deg); }
+      60% { transform: translate(-1px, -1px) rotate(-0.5deg); }
+      80% { transform: translate(1px, 1px) rotate(0.5deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
+    }
+
+    /* Central Quadrilateral Container */
+    .pb-quadrilateral {
+      width: 100%;
+      max-width: 450px;
+      aspect-ratio: 3 / 4;
+      background-color: var(--pb-white);
+      position: relative;
+      overflow: hidden;
+      margin: auto;
+      z-index: 5;
+    }
+
+    /* Handdrawn Sketch Border overlaying the carousel */
+    .pb-sketch-border {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: calc(100% + 6px);
+      height: calc(100% + 6px);
+      pointer-events: none;
+      z-index: 8;
+      filter: url(#pb-sketch-filter);
+    }
+
+    .pb-carousel-wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* Slide management */
+    .pb-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+      z-index: 1;
+    }
+
+    .pb-slide.pb-active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .pb-figure {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .pb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Interactive overlay with transparent dark tint */
+    .pb-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 30px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease, background-color 0.4s ease;
+      z-index: 3;
+    }
+
+    .pb-overlay-text {
+      font-family: var(--pb-font-hand);
+      font-size: 24px;
+      line-height: 1.35;
+      color: var(--pb-dark);
+      text-shadow: 0 0 10px rgba(255,255,255,0.9), 0 0 20px rgba(255,255,255,0.6);
+      max-width: 85%;
+      text-align: right;
+      transform: rotate(-2deg);
+      transition: transform 0.4s ease;
+    }
+
+    /* Settle circle for slide 1 overlay text */
+    .pb-circle-container {
+      position: relative;
+      display: inline-block;
+      padding: 0 6px;
+    }
+
+    .pb-handwritten-circle {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 6px);
+      pointer-events: none;
+    }
+
+    /* Reveal overlay on desktop hover / active pause state */
+    .pb-quadrilateral:hover .pb-overlay,
+    .pb-quadrilateral.pb-paused .pb-overlay {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.05); /* 5% tactile/visual feedback overlay */
+    }
+
+    /* Hide decorative text in outer margins on small screens */
+    @media (max-width: 600px) {
+      .pb-note {
+        display: none !important;
+      }
+      .pb-canvas {
+        padding: 80px 20px;
+      }
+      .pb-corner-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        height: auto;
+        padding-top: 20px;
+      }
+      .pb-header {
+        position: absolute;
+        top: 0;
+        height: auto;
+        pointer-events: auto;
+      }
+      .pb-link {
+        position: static;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .pb-link {
+        font-size: 11px;
+      }
+    }
+  </style>
+
+  <main class="pb-canvas">
+
+    <!-- Header Navigation holding the 4 corner links -->
+    <header class="pb-header">
+      <nav class="pb-corner-nav" aria-label="Navegación del Portafolio">
+        <a href="/book" class="pb-link pb-link-book" id="pb-nav-book">BOOK</a>
+        <a href="/about-me" class="pb-link pb-link-about" id="pb-nav-about">ABOUT ME</a>
+        <a href="/services" class="pb-link pb-link-services" id="pb-nav-services">SERVICES</a>
+        <a href="/contact-me" class="pb-link pb-link-contact" id="pb-nav-contact">CONTACT ME</a>
+      </nav>
+    </header>
+
+    <!-- Outer Canvas Handwritten Notes -->
+    <div class="pb-note pb-note-tl" aria-hidden="true">
+      BRANDS JUST NEED TO<br />
+      <span class="pb-underline">SETTLE DOWN</span><br />
+      <span class="pb-underline">SETTLE DOWN</span>
     </div>
-  </footer>
+
+    <div class="pb-note pb-note-tr" aria-hidden="true">
+      GROWTH IS DATA<br />
+      AND DATA IS<br />
+      EMOTION
+    </div>
+
+    <!-- Central Photo Container (Cuadrilátero) -->
+    <section class="pb-quadrilateral" id="pb-carousel" aria-label="Interactive Creative Book Showcase">
+
+      <!-- Overlapping sketchy border lines vector -->
+      <svg class="pb-sketch-border" viewBox="0 0 100 100" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Sketch-mode overlapping paths -->
+        <path d="M -3,2 Q 33,-1 66,3 T 103,1" stroke="#111111" stroke-width="0.85" stroke-linecap="round" />
+        <path d="M -2,98 Q 30,101 70,97 T 102,99" stroke="#111111" stroke-width="0.85" stroke-linecap="round" />
+        <path d="M 2,-3 Q -1,35 3,70 T 2,103" stroke="#111111" stroke-width="0.85" stroke-linecap="round" />
+        <path d="M 98,-2 Q 101,45 97,75 T 98,102" stroke="#111111" stroke-width="0.85" stroke-linecap="round" />
+      </svg>
+
+      <div class="pb-carousel-wrapper">
+        <!-- Slide 1 (Active, preloaded) -->
+        <article class="pb-slide pb-active">
+          <figure class="pb-figure">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+                 alt="Alejandro Zavala - Creative Direction"
+                 class="pb-img"
+                 width="450"
+                 height="600" />
+            <figcaption class="pb-overlay">
+              <span class="pb-overlay-text">
+                <span class="pb-circle-container">
+                  WAIT!
+                  <svg class="pb-handwritten-circle" viewBox="0 0 100 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Imperfect handdrawn outline circle surrounding wait -->
+                    <path d="M 8,22 C 8,5 92,3 90,20 C 88,38 12,42 6,24" stroke="#111111" stroke-width="2.2" stroke-linecap="round" />
+                  </svg>
+                </span>
+                I HAVE SOMETHING TO SAY TO BRANDS WHO ARE STRUGGLING x2 WE 'RE NOT MACHINE BUT WE NEED TO REBOOT THE GROWTH ENGINE,
+              </span>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Slide 2 (Lazy) -->
+        <article class="pb-slide">
+          <figure class="pb-figure">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+                 alt="Alejandro Zavala - Omnichannel Brand Strategy"
+                 class="pb-img"
+                 loading="lazy"
+                 width="450"
+                 height="600" />
+            <figcaption class="pb-overlay">
+              <span class="pb-overlay-text">
+                OMNICHANNEL BRAND STRATEGY & DATA-DRIVEN CREATIVE DIRECTION — 2026 SELECTED WORKS
+              </span>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Slide 3 (Lazy) -->
+        <article class="pb-slide">
+          <figure class="pb-figure">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
+                 alt="Alejandro Zavala - Massive BTL Experiences"
+                 class="pb-img"
+                 loading="lazy"
+                 width="450"
+                 height="600" />
+            <figcaption class="pb-overlay">
+              <span class="pb-overlay-text">
+                FROM HIGH-END FASHION TO MASSIVE BTL EXPERIENCES — PAUSE & EXPLORE THE BOOK
+              </span>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- Outer Canvas Bottom Handwritten Notes -->
+    <div class="pb-note pb-note-bl" aria-hidden="true">
+      I'M THE ONE<br />
+      WHO TURNED THE<br />
+      SWITCH ON
+    </div>
+
+    <div class="pb-note pb-note-br" aria-hidden="true">
+      WE HAVE TO<br />
+      <span class="pb-underline">SWITCH IT OFF</span><br />
+      <span class="pb-underline">SOMETIMES,</span>
+    </div>
+
+  </main>
+
+  <script>
+    class PortfolioCarousel {
+      constructor(containerId, intervalTime = 2800) {
+        this.container = document.getElementById(containerId);
+        if (!this.container) return;
+
+        this.slides = this.container.querySelectorAll('.pb-slide');
+        this.totalSlides = this.slides.length;
+        this.currentIndex = 0;
+        this.intervalTime = intervalTime;
+        this.timer = null;
+        this.isPaused = false;
+        this.hasTrackedHold = false;
+
+        this.init();
+      }
+
+      init() {
+        this.startTimer();
+        this.bindEvents();
+      }
+
+      startTimer() {
+        if (this.timer) clearInterval(this.timer);
+        this.timer = setInterval(() => {
+          if (!this.isPaused) {
+            this.nextSlide();
+          }
+        }, this.intervalTime);
+      }
+
+      nextSlide() {
+        this.slides[this.currentIndex].classList.remove('pb-active');
+        this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
+        this.slides[this.currentIndex].classList.add('pb-active');
+        this.hasTrackedHold = false; // Reset tracking flag for the new slide view
+      }
+
+      pause() {
+        this.isPaused = true;
+        this.container.classList.add('pb-paused');
+
+        // Push hold tracking event to Google Tag Manager once per slide view
+        if (!this.hasTrackedHold) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'carousel_hold',
+            slide_index: this.currentIndex
+          });
+          this.hasTrackedHold = true;
+        }
+      }
+
+      resume() {
+        this.isPaused = false;
+        this.container.classList.remove('pb-paused');
+        this.hasTrackedHold = false;
+      }
+
+      bindEvents() {
+        // Desktop interactions: Hover triggers pause and overlays
+        this.container.addEventListener('mouseenter', () => this.pause());
+        this.container.addEventListener('mouseleave', () => this.resume());
+
+        // Mobile touch interaction: Passive listener without blocking scrolling vertical gestures
+        this.container.addEventListener('touchstart', () => {
+          this.pause();
+        }, { passive: true });
+
+        this.container.addEventListener('touchend', () => {
+          this.resume();
+        }, { passive: true });
+
+        this.container.addEventListener('touchcancel', () => {
+          this.resume();
+        }, { passive: true });
+
+        // GTM Contact Click Tracker
+        const contactBtn = document.getElementById('pb-nav-contact');
+        if (contactBtn) {
+          contactBtn.addEventListener('click', () => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'click_contact',
+              location: 'corner_nav'
+            });
+          });
+        }
+      }
+    }
+
+    // Instantiating custom carousel safe in scope
+    document.addEventListener('DOMContentLoaded', () => {
+      new PortfolioCarousel('pb-carousel', 2800);
+    });
+  </script>
+  <!-- ==========================================
+       END OF WORDPRESS CUSTOM HTML BLOCK (PB-)
+       ========================================== -->
+
 </body>
 </html>
